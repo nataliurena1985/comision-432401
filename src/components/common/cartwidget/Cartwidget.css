@@ -1,0 +1,21 @@
+.cardt {
+  background-color: darkred;
+}
+
+.counter {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 1.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-weight: bold;
+  caret-color: transparent;
+}
+
+.counter li {
+  display: inline block;
+}

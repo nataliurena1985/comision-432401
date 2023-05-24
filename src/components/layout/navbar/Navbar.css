@@ -1,0 +1,17 @@
+.navconta li a {
+  text-decoration: none;
+  color: green;
+  display: flex;
+  padding: 10px;
+  background-color: bisque;
+}
+
+.navconta li {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+.navconta li a:hover {
+  background: gold;
+}
