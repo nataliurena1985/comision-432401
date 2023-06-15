@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Chocolate",
+      "price": 15000,
+      "stock": 2,
+      "description": "Helado de leche fluida,cacao,crema y azucar",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dv6nijgvd/image/upload/v1685584977/ecomerce/Chocolates_x4pcsv.png"
+    },
+    {
+      "id": 2,
+      "title": "Crema",
+      "price": 14500,
+      "stock": 5,
+      "description": "Helado de leche fluida, crema,azucar y huevo",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dv6nijgvd/image/upload/v1685584987/ecomerce/Cremas_pwicxc.png"
+    },
+    {
+      "id": 3,
+      "title": "Dulce de leche",
+      "price": 19000,
+      "stock": 5,
+      "description": "Helado de dulce de leche con elaboracion artesanal",
+      "category": "urbanas",
+      "img": "https://res.cloudinary.com/dv6nijgvd/image/upload/v1685585002/ecomerce/Dulce_de_leche_sufptc.png"
+    },
+    {
+      "id": 4,
+      "title": "Frutales",
+      "price": 17800,
+      "stock": 5,
+      "description": "Helado de agua con azucar y dextroso con distintos sabores apto para veganos",
+      "category": "urbanas",
+      "img": "https://res.cloudinary.com/dv6nijgvd/image/upload/v1685585025/ecomerce/Frutales_nircif.png"
+    },
+    {
+      "id": 5,
+      "title": "Especiales",
+      "price": 17800,
+      "stock": 5,
+      "description": "Helado de crema a base de yemas, crema y vino de marsala",
+      "category": "urbanas",
+      "img": "https://res.cloudinary.com/dv6nijgvd/image/upload/v1685585015/ecomerce/Especiales_ckpugt.png"
+    },
+    {
+      "title": "cambiado con patch",
+      "price": 2500,
+      "stock": 2,
+      "description": "Estas son las mejores zapatillas",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
+      "id": 6
+    },
+    {
+      "title": "zapatillas creadas con axios",
+      "price": 15000,
+      "stock": 2,
+      "description": "Estas son las mejores zapatillas",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
+      "id": 8
+    },
+    {
+      "title": "zapatillas creadas con axios",
+      "price": 15000,
+      "stock": 2,
+      "description": "Estas son las mejores zapatillas",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
+      "id": 9
+    },
+    {
+      "title": "zapatillas creadas con axios",
+      "price": 15000,
+      "stock": 2,
+      "description": "Estas son las mejores zapatillas",
+      "category": "deportivas",
+      "img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
+      "id": 10
+    }
+  ]
+}

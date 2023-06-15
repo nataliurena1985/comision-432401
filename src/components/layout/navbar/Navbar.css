@@ -1,4 +1,44 @@
-.navconta li a {
+.containerNavbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: steelblue;
+  align-items: center;
+  padding: 10px;
+}
+.containerNavbar a {
+  text-decoration: none;
+}
+
+.containerNavbar a h2 {
+  color: #dda0dd;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.categories a {
+  background-color: beige;
+  padding: 10px 20px;
+  color: #7f669d;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+a {
+  list-style: none;
+}
+/*.navconta li a {
   text-decoration: none;
   color: green;
   display: flex;
@@ -15,3 +55,4 @@
 .navconta li a:hover {
   background: gold;
 }
+*/
