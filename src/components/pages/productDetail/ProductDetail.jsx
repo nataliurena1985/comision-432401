@@ -1,13 +1,13 @@
-import { ItemCount } from "../../ItemCount";
+import { ItemCount } from "../../common/ItemCount";
 
-const ProductDetail = ({ productSelected }) => {
+const ProductDetail = ({ productSelected, addToCart, cantidad }) => {
   const onAdd = (cantidad) => {
     let data = {
       ...productSelected,
       quantity: cantidad,
     };
 
-    console.log(data);
+    addToCart(data);
   };
 
   return (
@@ -17,7 +17,11 @@ const ProductDetail = ({ productSelected }) => {
         <img src={productSelected.img} alt="" />
       </div>
       {productSelected.stock > 0 ? (
-        <ItemCount stock={productSelected.stock} initial={1} onAdd={onAdd} />
+        <ItemCount
+          stock={productSelected.stock}
+          initial={cantidad}
+          onAdd={onAdd}
+        />
       ) : (
         <h3>No hay stock</h3>
       )}

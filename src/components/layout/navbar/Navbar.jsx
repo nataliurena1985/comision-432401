@@ -1,3 +1,4 @@
+import { menuNavigate } from "../../../routes/menuNavigate";
 import CartWidget from "../../common/cartwidget/CartWidget";
 import "./Navbar.css";
 
@@ -12,13 +13,11 @@ const Navbar = () => {
         </Link>
 
         <ul className="categories">
-          <Link to="/">Limpiar filtros</Link>
-
-          <Link to="/category/cremas">Cremas</Link>
-          <Link to="/category/leche">Leche</Link>
-          <Link to="/category/chocolates">Chocolates</Link>
-          <Link to="/category/frutales">Frutales</Link>
-          <Link to="/category/postres ">Postres </Link>
+          {menuNavigate.map(({ id, path, title }) => (
+            <Link key={id} to={path}>
+              {title}
+            </Link>
+          ))}
         </ul>
         <CartWidget />
       </div>

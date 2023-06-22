@@ -1,21 +1,25 @@
-import { useEffect } from "react";
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 
-import { useNavigate } from "react-router-dom";
+const CartContainer = () => {
+  const { cart, clearCart, removeById } = useContext(CartContext);
 
-function CartContainer() {
-  const navigate = useNavigate();
-
-  const realizarCompra = () => {
-    console.log("se compraron los productos");
-    // navegar
-    navigate("/");
-  };
   return (
     <div>
-      <h1>Carritoooo</h1>
-      <button onClick={realizarCompra}>Comprar</button>
+      <button onClick={clearCart}>Limpiar carrito</button>
+
+      {cart.map((product) => {
+        return (
+          <div key={product.id}>
+            <h2>{product.title}</h2>
+            <h3>{product.price}</h3>
+            <h3>{product.quantity}</h3>
+            <button onClick={() => removeById(product.id)}>Eliminar</button>
+          </div>
+        );
+      })}
     </div>
   );
-}
+};
 
 export default CartContainer;
