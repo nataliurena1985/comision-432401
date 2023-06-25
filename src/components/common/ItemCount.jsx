@@ -9,11 +9,20 @@ export const ItemCount = ({ stock, initial = 1, onAdd }) => {
   return (
     <>
       <div className="count--container">
-        <Button variant="contained" onClick={decrement}>
+        <Button
+          disabled={stock < 1 ? true : false}
+          variant="contained"
+          onClick={decrement}
+        >
           -
         </Button>
         <h2>{count}</h2>
-        <Button variant="contained" onClick={increment}>
+
+        <Button
+          disabled={stock < 1 ? true : false}
+          variant="contained"
+          onClick={increment}
+        >
           +
         </Button>
 

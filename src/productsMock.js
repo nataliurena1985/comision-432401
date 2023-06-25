@@ -44,7 +44,7 @@ export const products = [
     id: 5,
     title: "Especiales",
     price: 17800,
-    stock: 5,
+    stock: 0,
     description: "Helado de crema a base de yemas, crema y vino de marsala",
     category: "postres",
 

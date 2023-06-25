@@ -5,16 +5,11 @@
   flex-direction: row;
   justify-content: space-between;
 
-  background-color: steelblue;
   align-items: center;
   padding: 10px;
 }
 .containerNavbar a {
   text-decoration: none;
-}
-
-.containerNavbar a h2 {
-  color: #dda0dd;
 }
 
 .categories {
@@ -27,7 +22,7 @@
 .categories a {
   background-color: beige;
   padding: 10px 20px;
-  color: #7f669d;
+
   width: 100px;
   display: flex;
   justify-content: space-between;
@@ -37,6 +32,16 @@
 }
 a {
   list-style: none;
+}
+
+.temab {
+  background-color: beige;
+  padding: 10px 20px;
+  color: #7f669d;
+  width: 100px;
+  display: flex;
+  border-radius: 10px;
+  text-decoration: none;
 }
 /*.navconta li a {
   text-decoration: none;
