@@ -1,39 +1,37 @@
-import { products } from "../../../productsMock";
 import { useEffect, useState } from "react";
 import ItemListPresentacional from "./ItemListPresentacional";
 import { useParams } from "react-router";
 import { ScaleLoader } from "react-spinners";
-
-const objetoLoader = {
-  display: "block",
-  margin: "0 auto",
-  border: "2px solid red",
-  padding: "20px",
-  background: "#F0E68C",
-  width: "fit-content",
-  height: "80px",
-};
+import { db } from "../../../firebaseConfig";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 export const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);
   const { categoryName } = useParams();
 
   useEffect(() => {
-    let productosFiltrados = products.filter(
-      (product) => product.category === categoryName
-    );
+    let itemCollection = collection(db, "products");
+    let consulta;
 
-    const tarea = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(categoryName ? productosFiltrados : products);
-      }, 500);
-    });
+    if (categoryName) {
+      // los filtrados
+      consulta = query(itemCollection, where("category", "==", categoryName));
+    } else {
+      // todos
+      consulta = itemCollection;
+    }
 
-    tarea
-      .then((respuesta) => setItems(respuesta))
-      .catch((rechazo) => {
-        console.log(rechazo);
-      });
+    getDocs(consulta)
+      .then((res) => {
+        let products = res.docs.map((elemento) => {
+          return {
+            ...elemento.data(),
+            id: elemento.id,
+          };
+        });
+        setItems(products);
+      })
+      .catch((err) => console.log(err));
   }, [categoryName]);
 
   if (items.length === 0) {
@@ -41,12 +39,13 @@ export const ItemListContainer = ({ greeting }) => {
       <div
         style={{
           width: "100%",
+          height: "90vh",
           display: "flex",
           justifyContent: "center",
-          padding: "150px",
+          alignItems: "center",
         }}
       >
-        <ScaleLoader cssOverride={objetoLoader} color="#36d7b7" />
+        <ScaleLoader color="steelblue" width={40} height={111} />
       </div>
     );
   }
