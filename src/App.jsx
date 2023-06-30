@@ -10,7 +10,6 @@ import CartContextProvider from "./context/CartContext";
 import ThemeContextProvider from "./context/temeContext";
 import "./App.css";
 const App = () => {
-  const greeting = "Bienvenido";
   return (
     <BrowserRouter>
       <CartContextProvider>

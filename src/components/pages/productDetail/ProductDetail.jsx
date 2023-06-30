@@ -1,5 +1,5 @@
 import { ItemCount } from "../../common/ItemCount";
-
+import "./productDetail.css";
 const ProductDetail = ({ productSelected, cantidad, onAdd }) => {
   // const onAdd = (cantidad) => {
   //   let data = {
@@ -12,7 +12,7 @@ const ProductDetail = ({ productSelected, cantidad, onAdd }) => {
   return (
     <>
       <div>
-        <h2>{productSelected.title}</h2>
+        <h1>{productSelected.title}</h1>
         <img src={productSelected.img} alt="" />
       </div>
 

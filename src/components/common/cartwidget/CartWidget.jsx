@@ -27,7 +27,7 @@ export default function CartWidget() {
         {/* <ShoppingCartIcon /> */}
         <Link to="/carrito">
           <Badge badgeContent={totalItems} showZero color="primary">
-            <BsFillCartCheckFill color="#FF00BF" size="38px" />
+            <BsFillCartCheckFill color="#FF00BF" size="44px" />
           </Badge>
         </Link>
         <button onClick={() => setCart(cart + 1)}>
