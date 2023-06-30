@@ -1,8 +1,9 @@
 import { Button, TextField } from "@mui/material";
+import "./checkoutForm.css";
 
 const Checkout = ({ handleSubmit, handleChange, errors }) => {
   return (
-    <div style={{ paddingTop: "50px" }}>
+    <div className="containerForm">
       <form onSubmit={handleSubmit}>
         <TextField
           label="Name"
