@@ -3,8 +3,8 @@ import "./checkoutForm.css";
 
 const Checkout = ({ handleSubmit, handleChange, errors }) => {
   return (
-    <div className="containerForm">
-      <form onSubmit={handleSubmit}>
+    <div>
+      <form className="containerForm" onSubmit={handleSubmit}>
         <TextField
           label="Name"
           variant="outlined"
