@@ -1,7 +1,14 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Cart.css";
+import { CartContext } from "../../../context/CartContext";
+import { useContext } from "react";
+
 const Cart = ({ cart, limpiar, removeById, total }) => {
+  const { getTotalItems } = useContext(CartContext);
+
+  let totalItems = getTotalItems();
+
   return (
     <div>
       <div className="cart-container">
@@ -24,10 +31,10 @@ const Cart = ({ cart, limpiar, removeById, total }) => {
         </div>
         <div className="cart-info">
           <h1>Descripcion del carrito:</h1>
-          <h2>Cantidad de productos: </h2>
+          <h2>Cantidad de productos: {totalItems} </h2>
           <h3>Precio total: {total}</h3>
-          <p>Descuento: </p>
-          <h3>Precio final: </h3>
+          <p>Descuento: 10% </p>
+          <h3>Precio final:{total * 0.9} </h3>
           {cart.length > 0 ? (
             <div className="btn-cart">
               <Button onClick={limpiar} variant="contained">

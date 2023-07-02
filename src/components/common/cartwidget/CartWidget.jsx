@@ -14,7 +14,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 export default function CartWidget() {
-  const [cart, setCart] = useState(0);
+  // const [cart, setCart] = useState(0);
   // const { cardt, counter } = styles;
 
   const { getTotalItems } = useContext(CartContext);
@@ -30,9 +30,9 @@ export default function CartWidget() {
             <BsFillCartCheckFill color="#FF00BF" size="44px" />
           </Badge>
         </Link>
-        <button onClick={() => setCart(cart + 1)}>
+        {/* <button onClick={() => setCart(cart + 1)}>
           <span>{cart}</span>
-        </button>
+        </button> */}
 
         {/* <BsCart4 /> */}
       </div>
