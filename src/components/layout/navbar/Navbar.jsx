@@ -17,6 +17,7 @@ const Navbar = () => {
           >
             Heladeria Tucan
           </h2>
+          <img src="https://res.cloudinary.com/dv6nijgvd/image/upload/v1688487962/ecomerce/fr2bsriqj2b7pbznmwlm.jpg" />
         </Link>
 
         <ul className="categories">
