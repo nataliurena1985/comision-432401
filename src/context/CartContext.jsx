@@ -49,7 +49,7 @@ const CartContextProvider = ({ children }) => {
   };
   const getTotalQuantityById = (id) => {
     let producto = cart.find((prod) => prod.id === id);
-    console.log(producto?.quantity);
+    // console.log(producto?.quantity);
     return producto?.quantity;
   };
 
