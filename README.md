@@ -1,6 +1,6 @@
-# Mi tienda
+# Mi tienda de Helados
 
-### esta es mi tienda de helados
+### Helados Tucán es una empresa familiar de larga trayectoria en Lugano, capital federal dedicada a la fabricación y venta de helados artesanales, elaboración de postres helados, tortas artesanales.Su nombre es desde hace años sinónimo del mejor helado de la zona, es un clásico en toda reunión, tanto familiar, social o empresarial. Los mismos son realizados cuidando todas las normas de higiene.
 
 ![](https://res.cloudinary.com/dv6nijgvd/image/upload/v1685584987/ecomerce/Cremas_pwicxc.png)
 
