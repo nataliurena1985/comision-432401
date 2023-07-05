@@ -2,9 +2,9 @@
 
 ### esta es mi tienda bla bla
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmIJpaaJDG6XVyFQOQUlZHIycTI2A5PDc3Q&usqp=CAU)
+![](https://res.cloudinary.com/dv6nijgvd/image/upload/v1685584987/ecomerce/Cremas_pwicxc.png)
 
-[Pepe](https://www.google.com.ar/)
+[ecomer](https://comision-432401.vercel.app/)
 
 #### para clonar el proyecto ejecutar el siguiente codigoi
 
@@ -13,5 +13,5 @@ git clone urlasdasda
 ```
 
 ```javascript
-const nombre = "jorge"
+const nombre = "claudia natali";
 ```
