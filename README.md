@@ -9,7 +9,7 @@
 #### para clonar el proyecto ejecutar el siguiente codigoi
 
 ```
-git clone urlasdasda
+git clone [project url]
 ```
 
 ```javascript
