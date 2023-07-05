@@ -1,15 +1,23 @@
 import { menuNavigate } from "../../../routes/menuNavigate";
 import CartWidget from "../../common/cartwidget/CartWidget";
 import "./Navbar.css";
-
+import { ThemeContext } from "../../../context/temeContext";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+  // console.log(theme);
   return (
     <>
-      <div className="containerNavbar">
+      <div className={theme ? "containerNavbar luz" : "containerNavbar oscuro"}>
         <Link to="/">
-          <h2>Heladeria Tucan</h2>
+          <h2
+            className={theme ? "containerNavbar luz" : "containerNavbar oscuro"}
+          >
+            Heladeria Tucan
+          </h2>
+          <img src="https://res.cloudinary.com/dv6nijgvd/image/upload/v1688487962/ecomerce/fr2bsriqj2b7pbznmwlm.jpg" />
         </Link>
 
         <ul className="categories">
@@ -19,6 +27,9 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
+        <button className="temab" onClick={() => setTheme(!theme)}>
+          tema color
+        </button>
         <CartWidget />
       </div>
     </>

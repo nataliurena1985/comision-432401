@@ -2,6 +2,7 @@ import Form from "../components/pages/Form/Form";
 import FormFormik from "../components/pages/Form/FormFormik";
 
 import CartContainer from "../components/pages/cart/CartContainer";
+import CheckoutContainer from "../components/pages/checkout/CheckoutContainer";
 import { ItemListContainer } from "../components/pages/itemListContainer/ItemListContainer";
 import ProductDetailContainer from "../components/pages/productDetail/ProductDetailContainer";
 
@@ -35,5 +36,10 @@ export const menuRoutes = [
     id: "formik",
     path: "/formik",
     Element: FormFormik,
+  },
+  {
+    id: "checkout",
+    path: "/checkout",
+    Element: CheckoutContainer,
   },
 ];

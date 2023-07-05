@@ -7,20 +7,28 @@ export const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const { count, decrement, increment } = useCount(initial, stock);
 
   return (
-    <>
+    <div className="itemCountContainer">
       <div className="count--container">
-        <Button variant="contained" onClick={decrement}>
+        <Button
+          disabled={stock < 1 ? true : false}
+          variant="contained"
+          onClick={decrement}
+        >
           -
         </Button>
         <h2>{count}</h2>
-        <Button variant="contained" onClick={increment}>
+        <Button
+          disabled={stock < 1 ? true : false}
+          variant="contained"
+          onClick={increment}
+        >
           +
         </Button>
-
-        <Button variant="contained" onClick={() => onAdd(count)}>
-          Agregar al carrito
-        </Button>
       </div>
-    </>
+
+      <Button variant="contained" onClick={() => onAdd(count)}>
+        Agregar al carrito
+      </Button>
+    </div>
   );
 };
