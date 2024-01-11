@@ -17,7 +17,6 @@ export default function CartWidget() {
   return (
     <>
       <div className="counter ">
-        {/* <ShoppingCartIcon /> */}
         <Link to="/carrito">
           <Badge badgeContent={totalItems} showZero color="primary">
             <BsFillCartCheckFill color="#FF00BF" size="44px" />
