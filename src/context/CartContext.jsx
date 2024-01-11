@@ -1,15 +1,12 @@
-// creo el contexto
 import { createContext, useState } from "react";
 export const CartContext = createContext();
 
-// creo el componente proveedor del contexto
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem("cart")) || []
   );
 
   const addToCart = (newProduct) => {
-    // preguntar si existe
     let exist = isInCart(newProduct.id);
 
     if (exist) {
@@ -49,7 +46,7 @@ const CartContextProvider = ({ children }) => {
   };
   const getTotalQuantityById = (id) => {
     let producto = cart.find((prod) => prod.id === id);
-    // console.log(producto?.quantity);
+
     return producto?.quantity;
   };
 
