@@ -1,14 +1,6 @@
 import { ItemCount } from "../../common/ItemCount";
 import "./productDetail.css";
 const ProductDetail = ({ productSelected, cantidad, onAdd }) => {
-  // const onAdd = (cantidad) => {
-  //   let data = {
-  //     ...productSelected,
-  //     quantity: cantidad,
-  //   };
-
-  //   addToCart(data);
-  // };
   return (
     <>
       <div>
