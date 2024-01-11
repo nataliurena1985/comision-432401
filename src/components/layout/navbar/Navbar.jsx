@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-  // console.log(theme);
+
   return (
     <>
       <div className={theme ? "containerNavbar luz" : "containerNavbar oscuro"}>
