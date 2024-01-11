@@ -43,7 +43,14 @@ const ProductDetailContainer = () => {
   }, [id]);
 
   return (
-    <div>
+    <div
+      style={{
+        background: "linear-gradient(180deg, #59E16B, #74A8D7)",
+
+        paddingTop: "80px",
+        paddingBottom: "50px",
+      }}
+    >
       {productSelected.id ? (
         <ProductDetail
           cantidad={cantidad}
