@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { ScaleLoader } from "react-spinners";
 import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import { Container, Row } from "react-bootstrap";
 
 export const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);
@@ -51,8 +52,19 @@ export const ItemListContainer = ({ greeting }) => {
   }
 
   return (
-    <>
-      <ItemListPresentacional items={items} />;<h1>{greeting}</h1>;
-    </>
+    <div
+      style={{
+        background: "linear-gradient(180deg, #59E16B, #74A8D7)",
+
+        paddingTop: "80px",
+        paddingBottom: "50px",
+      }}
+    >
+      <Container>
+        <Row className="row-cols-1 row-cols-md-3 g-2 ">
+          <ItemListPresentacional items={items} />;<h1>{greeting}</h1>;
+        </Row>
+      </Container>
+    </div>
   );
 };
