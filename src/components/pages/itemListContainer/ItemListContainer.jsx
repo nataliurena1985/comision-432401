@@ -6,7 +6,7 @@ import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { Container, Row } from "react-bootstrap";
 
-export const ItemListContainer = ({ greeting }) => {
+export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { categoryName } = useParams();
 
@@ -62,7 +62,7 @@ export const ItemListContainer = ({ greeting }) => {
     >
       <Container>
         <Row className="row-cols-1 row-cols-md-3 g-2 ">
-          <ItemListPresentacional items={items} />;<h1>{greeting}</h1>;
+          <ItemListPresentacional items={items} />
         </Row>
       </Container>
     </div>
