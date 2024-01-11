@@ -1,10 +1,6 @@
 import { useState } from "react";
-// import { BsCart4 } from "react-icons/bs";
+
 import "./Cartwidget.css";
-
-// import  from "./CartWidget.module.css";
-
-// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import { Badge } from "@mui/material";
 import { BsFillCartCheckFill } from "react-icons/bs";
