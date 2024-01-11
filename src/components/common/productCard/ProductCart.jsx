@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function ProductCart({ elemento }) {
   return (
     <Col>
-      <Card sx={{ width: 450 }}>
+      <Card sx={{ width: 360 }}>
         <CardMedia
           sx={{ height: 300 }}
           image={elemento.img}
