@@ -10,7 +10,14 @@ const Cart = ({ cart, limpiar, removeById, total }) => {
   let totalItems = getTotalItems();
 
   return (
-    <div>
+    <div
+      style={{
+        background: "radial-gradient(at center bottom, #CCC04F, #A7EDE4)",
+
+        paddingTop: "80px",
+        paddingBottom: "50px",
+      }}
+    >
       <div className="cart-container">
         <div className="container-items">
           {cart.map((item) => {
